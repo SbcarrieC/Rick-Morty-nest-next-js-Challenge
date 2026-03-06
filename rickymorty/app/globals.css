@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* para centrar el contenido */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Configuracion de titulo*/
+h1 {
+  margin-bottom: 40px;
+}
+/* Configuracion de titulo*/
+
+
+/* config grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+/* config grid */
+
+/* configuracion de  tarjetas */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+/* configuracion de  tarjetas */
+
+/* borde de img */
+.card img {
+  border-radius: 10px;
+}
+/* borde de img */
